@@ -1,0 +1,23 @@
+#!/bin/bash
+echo -e " - Sourcing bash_macrc."
+
+#For Mac auto completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
+#JAVA - Sets the Java version on mac
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+
+#Vagrant for parallels
+#export VAGRANT_DEFAULT_PROVIDER=parallels
+export VAGRANT_DEFAULT_PROVIDER=virtualbox
+
+#Adding Berkshelf to the front of th PATH
+PATH=$HOME/.chefdk/gem/ruby/2.1.0/bin:/opt/chefdk/bin:$PATH
+
+export CLICOLOR='true'
+export LSCOLORS="gxfxcxdxbxegedabagacad"
+alias ls='ls -G'
+
+echo -e " - Finished sourcing bash_macrc."
