@@ -1,8 +1,0 @@
-[alias]
-	st = status
-	co = checkout
-[user]
-	email = dewayne.walker@gmail.com
-	name = Dewayne Walker
-[core]
-	editor = vim
