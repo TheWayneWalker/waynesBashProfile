@@ -1,0 +1,2 @@
+ - Figure out what is the default .bashrc and setup a script to add all the things you like to the bashrc or files the bashrc reads.
+

@@ -1,0 +1,4 @@
+- mkdir for each os
+- move each os specific bash thing there
+- Organize a bit more
+
