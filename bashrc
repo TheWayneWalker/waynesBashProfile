@@ -4,9 +4,6 @@ echo " - Sourcing bashrc."
 #Load common aliases
 source ~/.bash_commonrc
 
-# Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
-
 #Load Mac or Linuxrc
 case $OSTYPE in 
     darwin* ) 
